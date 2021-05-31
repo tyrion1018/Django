@@ -5,22 +5,18 @@ from django.db import models
 
 
 class Country(models.Model):
-    name = models.CharField(max_length=30)
+    name = models.CharField(max_length=10)
 
     def __str__(self):
-        return self.name
+        return self.name[0]
 
 
 class City(models.Model):
-    country = models.ForeignKey(Country, on_delete=models.CASCADE)
-    name = models.CharField(max_length=30)
-
-    def __str__(self):
-        return self.name
+    name = models.CharField(max_length=10)
 
 
 class Person(models.Model):
-    name = models.CharField(max_length=100)
+    name = models.CharField(max_length=10, help_text="Enter your full name")
     birthdate = models.DateField(null=True, blank=True)
     country = models.ForeignKey(Country, on_delete=models.SET_NULL, null=True)
     city = models.ForeignKey(City, on_delete=models.SET_NULL, null=True)

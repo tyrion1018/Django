@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %}Information{% endblock %}
+{% block content %}
+  <h2>City</h2>
+    <meta charset="utf-8">
+    <div class="relative1">
+
+        <select name="city">
+            {% for city in cities %}
+                <option value={{ city }}</option>
+            {% endfor %}
+        </select>
+    </div>
+{% endblock %}

@@ -1,0 +1,38 @@
+body {
+  background-color:blue;
+}
+
+container {
+  width:420px
+}
+
+header {
+  background-color:yellow;
+}
+menu.title.picture {
+     background-image: url('../media/base/myself.jpg');
+     background-size: 50px auto;
+     height: 50px;
+     width: 50px;
+     display: inline-block;
+ }
+
+
+/* 以下是menu選單區css*/
+nav {
+  margin:0;
+  padding:0;
+  list-style-type:none;
+  width:180px;
+}
+
+nav li a {
+  text-decoration: none;
+  display:block;/*設定為區塊*/
+  padding:3px;
+}
+
+nav li a.active, nav li a:hover {
+  background:#eee;/*滑鼠滑入處變色*/
+  color:#333;
+}

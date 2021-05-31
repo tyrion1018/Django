@@ -9,4 +9,16 @@ class PersonForm(forms.ModelForm):
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        self.fields['city'].queryset = City.objects.none()
+        self.fields['city'].queryset = City.objects.all()
+
+
+class CityForm(forms.Form):
+    cities = (
+        ('Taipei', 'Taipei'),
+        ('NewTaipei', 'NewTaipei'),
+        ('TaiChung', 'TaiChung')
+    )
+    name = forms.ChoiceField(widget=forms.Select(),
+                             choices=cities,
+                             initial=cities[0]
+                             )
