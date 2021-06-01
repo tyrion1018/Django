@@ -2,32 +2,33 @@
 <html lang="en">
 
 <html>
+<head>
     <link href="../static/base.css" type="text/css" rel="stylesheet">
-   <head>
-       <title>
-         {% block title %}Resume{% endblock %}
-      </title>
-   </head>
-   <body>
-   <!-- menu為我們的左側選單框架 -->
-    <div class="menu">
+    <title class="title">
+        {% block title %}Resume{% endblock %}
+    </title>
+
+</head>
+<!-- menu為我們的左側選單框架 -->
+
+<div class="name_block">
     <!-- 因為這是一個小區塊所以我們也使用一個div來包裹裡面的東西，並且給他一個class樣式方便我們調整-->
-    <div class="title">
-      <div class="picture">
-{#          <img src="../media/base/myself.jpg">#}
-      <span>
-          孔忠煦
-          Tyrion Kung
-      </span>
-        <ul id="nav">
-            <li><a href="">Home</a></li>
-            <li><a href="Introduction">Introduction</a></li>
-            <li><a href="Experience">Experience</a></li>
-            <li><a href="Appendix">Appendix</a></li>
-            <li><a href="AboutMe">About ME</a></li>
-        </ul>
-      </div>
-    </div>
-    </div>
-</body>
+    <div class="picture"></div>
+    <p class="name">
+        孔忠煦 (Tyrion)
+    </p>
+</div>
+
+<div class="logo"></div>
+
+<ul class="menu">
+    <li><a href="">Home</a></li>
+    <li><a href="Introduction">Introduction</a></li>
+    <li><a href="Experience">Experience</a></li>
+    <li><a href="Appendix">Appendix</a></li>
+    <li><a href="AboutMe">About ME</a></li>
+</ul>
+
+
+
 </html>

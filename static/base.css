@@ -1,38 +1,53 @@
-body {
-  background-color:blue;
+.name_block {
+    background-color: wheat;
+    float: left;
 }
 
-container {
-  width:420px
+.name_block .picture {
+    background-image: url('/media/base/myself.jpg');
+    background-size: 350px auto;
+    border-radius: 50%;
+    height: 350px;
+    width: 350px;
+    display: inline-block;
+
 }
 
-header {
-  background-color:yellow;
-}
-menu.title.picture {
-     background-image: url('../media/base/myself.jpg');
-     background-size: 50px auto;
-     height: 50px;
-     width: 50px;
-     display: inline-block;
- }
-
-
-/* 以下是menu選單區css*/
-nav {
-  margin:0;
-  padding:0;
-  list-style-type:none;
-  width:180px;
+.name_block .name {
+    color: black;
+    font-size: 50px;
+    text-align: center;
 }
 
-nav li a {
-  text-decoration: none;
-  display:block;/*設定為區塊*/
-  padding:3px;
+.logo {
+    display: block;
+    border: 2px solid black;
+    padding: 235px;
+    background-image: url('/media/base/AI-banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
-nav li a.active, nav li a:hover {
-  background:#eee;/*滑鼠滑入處變色*/
-  color:#333;
+
+ul.menu {
+    /* 取消ul預設的內縮及樣式 */
+    float: right;
+    margin-right: 20px;
+    line-height: 51px;
+}
+
+
+ul.menu li {
+    float: left;
+    margin-right: 30px;
+    font-size: 60px;
+    list-style: none;
+}
+
+ul.menu li a {
+    text-decoration: none;
+    color: #00a67d;
+    display: block;
+    margin: 0 1px;
 }
