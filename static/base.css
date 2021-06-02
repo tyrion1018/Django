@@ -1,41 +1,45 @@
-.name_block {
-    background-color: transparent;
-    float: left;
+body{
+  color: rgba(255,255,255,0.95);
+  letter-spacing: 1px;
+  font-family: "微軟正黑體",sans-serif;
+}
 
+.name_block {
+    background-color: #1f2a49;
+    float: left;
+    height: 892px;
+    width: 300px;
 }
 
 .name_block .picture {
     background-image: url('/media/base/myself.jpg');
-    background-size: 350px auto;
+    background-color: white;
+    background-size: cover;
+    background-position: top;
     border-radius: 50%;
-    height: 350px;
-    width: 350px;
-    display: inline-block;
+    height: 250px;
+    width: 250px;
+    display: block;
+    border: 2px solid black;
+
+    margin: 20px;
+
 
 }
 
 .name_block .name {
     margin: 0;
     color: white;
-    font-size: 45px;
     text-align: center;
-}
-
-.logo {
-    display: block;
-    border: 2px solid black;
-    padding: 235px;
-    background-image: url('/media/base/AI-banner.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-
+    font-size: 30px;
 }
 
 
 ul.menu {
     /* 取消ul預設的內縮及樣式 */
-    float: right;
-    margin-right: 20px;
+    position: fixed;
+    top: 0;
+    right: 0;
     line-height: 51px;
 }
 
@@ -45,6 +49,10 @@ ul.menu li {
     margin-right: 30px;
     font-size: 60px;
     list-style: none;
+    border: 1px solid darkred;
+    border-spacing: 10px;
+    padding: 30px 30px;
+    border-radius: 50%;
 }
 
 ul.menu li a {
@@ -53,3 +61,26 @@ ul.menu li a {
     display: block;
     margin: 0 1px;
 }
+.header1{
+    margin: 5px;
+    line-height: 36px;
+}
+.header1 h2{
+    color: black;
+    margin: 0;
+}
+.header1 h4{
+    color: black;
+    margin: 0;
+}
+.header1 .solid_line{
+    border: 1px solid black;
+    width: 1000px;
+    padding: 0;
+}
+.header1 p{
+    display: inline;
+    margin: 0;
+
+}
+
