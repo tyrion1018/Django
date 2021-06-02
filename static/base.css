@@ -61,26 +61,4 @@ ul.menu li a {
     display: block;
     margin: 0 1px;
 }
-.header1{
-    margin: 5px;
-    line-height: 36px;
-}
-.header1 h2{
-    color: black;
-    margin: 0;
-}
-.header1 h4{
-    color: black;
-    margin: 0;
-}
-.header1 .solid_line{
-    border: 1px solid black;
-    width: 1000px;
-    padding: 0;
-}
-.header1 p{
-    display: inline;
-    margin: 0;
-
-}
 

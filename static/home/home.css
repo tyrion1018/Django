@@ -1,0 +1,27 @@
+.header1 {
+    line-height: 36px;
+    margin: 0;
+    font-family: "標楷體", sans-serif;
+}
+
+.header1 h2 {
+    color: black;
+    margin: 0;
+}
+
+.header1 h4 {
+    color: black;
+    margin: 0;
+}
+
+.header1 p {
+    display: inline;
+    color: black;
+
+}
+
+.header1 hr {
+    border: 2px solid black;
+    margin-inline-end: 200px;
+}
+

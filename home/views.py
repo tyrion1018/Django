@@ -6,5 +6,4 @@ from .forms import HomeForm
 class HomeView(View):
 
     def get(self, request, *args, **kwargs):
-        home = HomeForm()
-        return render(request, "home/home.html", {'home': home})
+        return render(request, "home/home.html")
