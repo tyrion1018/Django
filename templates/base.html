@@ -1,30 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../static/base.css" type="text/css" rel="stylesheet">
-    <link href="../static/home/home.css" type="text/css" rel="stylesheet">
-    <title class="title">
-        {% block title %}Resume{% endblock %}
-    </title>
-</head>
-
-<body>
-<div class="page">
-    <div class="name_block">
-        <!-- 因為這是一個小區塊所以我們也使用一個div來包裹裡面的東西，並且給他一個class樣式方便我們調整-->
-        <div class="picture"></div>
-        <p class="name">
-            孔忠煦
-        </p>
-        <p class="name">
-            Tyrion Kung
-        </p>
-    </div>
-
-
+{#<!DOCTYPE html>#}
+{#<html lang="en">#}
+{##}
+{#<html>#}
+{#<head>#}
+{#    <meta name="viewport" content="width=device-width, initial-scale=1.0">#}
+{#    <link href="../static/base.css" type="text/css" rel="stylesheet">#}
+{#    <link href="../static/home/home.css" type="text/css" rel="stylesheet">#}
+{#    <title class="title">#}
+{#        {% block title %}Resume{% endblock %}#}
+{#    </title>#}
+{#</head>#}
+{##}
+{#<body>#}
+{#<div class="page">#}
+{#    <div class="name_block">#}
+{#        <!-- 因為這是一個小區塊所以我們也使用一個div來包裹裡面的東西，並且給他一個class樣式方便我們調整-->#}
+{#        <div class="picture"></div>#}
+{#        <p class="name">#}
+{#            孔忠煦#}
+{#        </p>#}
+{#        <p class="name">#}
+{#            Tyrion Kung#}
+{#        </p>#}
+{#    </div>#}
+{##}
+{##}
 {#        <ul class="menu">#}
 {#            <li><a href="">Home</a></li>#}
 {#            <li><a href="Introduction">Introduction</a></li>#}
@@ -32,8 +32,119 @@
 {#            <li><a href="Appendix">Appendix</a></li>#}
 {#            <li><a href="AboutMe">About ME</a></li>#}
 {#        </ul>#}
+{##}
+{#{% block content %} Test {% endblock %}#}
+{#</div>#}
+{##}
+{#</html>#}
 
-{% block content %} Test {% endblock %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="../static/base.css" type="text/css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Resume</title>
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="">
+    <img class="navbar-image" src="../media/base/apple_icon.svg" width="30" height="24">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="carousel slide" data-bs-ride="carousel">
+    <div class="container">
+        <div class="carousel slide" data-ride="carousel" id="carousel-works">
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-works" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-works" data-slide-to="1"></li>
+                <li data-target="#carousel-works" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="https://www.taiwan.net.tw/att/1/big_scenic_spots/pic_412_8.jpg"
+                         alt="">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="http://farm4.staticflickr.com/3795/9269794168_3ac58fc15c_b.jpg"
+                         alt="">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="https://www.taiwan.net.tw/att/1/big_scenic_spots/pic_3266_19.jpg"
+                         alt="">
+                </div>
+
+                {#                <a href="#carousel-works" class="carousel-control-prev" data-slide="prev">#}
+                {#                    <span class="carousel-control-prev-icon"></span>#}
+                {#                </a>#}
+                {#                <a href="#carousel-works" class="carousel-control-next" data-slide="next">#}
+                {#                    <span class="carousel-control-next-icon"></span>#}
+                {#                </a>#}
+            </div>
+        </div>
+    </div>
 </div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col aa">
+            A Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit.
+            Beatae dolor eum natus sunt ut.
+            Nam, quam, quia. Assumenda atque,
+            autem consequuntur dicta dignissimos dolorem labore libero,
+            perspiciatis quae repellat saepe?
+        </div>
+
+        <div class="col bb">
+            B Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit.
+            Atque debitis deleniti distinctio dolores ducimus ea et eveniet in ipsum libero nesciunt nisi,
+            nostrum officiis porro quisquam recusandae sit vel voluptates?
+        </div>
+    </div>
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="../static/js/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="../static/js/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="../static/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+</body>
 
 </html>

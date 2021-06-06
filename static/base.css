@@ -1,64 +1,24 @@
-body{
-  color: rgba(255,255,255,0.95);
-  letter-spacing: 1px;
-  font-family: "微軟正黑體",sans-serif;
+.slide {
+    height: 300px;
 }
 
-.name_block {
-    background-color: #1f2a49;
-    float: left;
-    height: 892px;
-    width: 300px;
-}
-
-.name_block .picture {
-    background-image: url('/media/base/myself.jpg');
-    background-color: white;
-    background-size: cover;
-    background-position: top;
-    border-radius: 50%;
-    height: 250px;
-    width: 250px;
-    display: block;
-    border: 2px solid black;
-
-    margin: 20px;
-
+.carousel-inner {
+    height: 300px;
 
 }
 
-.name_block .name {
-    margin: 0;
-    color: white;
-    text-align: center;
-    font-size: 30px;
-}
-
-
-ul.menu {
-    /* 取消ul預設的內縮及樣式 */
-    position: fixed;
-    top: 0;
-    right: 0;
-    line-height: 51px;
-}
-
-
-ul.menu li {
-    float: left;
-    margin-right: 30px;
-    font-size: 60px;
-    list-style: none;
-    border: 1px solid darkred;
-    border-spacing: 10px;
-    padding: 30px 30px;
+.navbar-image {
     border-radius: 50%;
 }
 
-ul.menu li a {
-    text-decoration: none;
-    color: darkred;
-    display: block;
-    margin: 0 1px;
+.carousel-inner .carousel-item img {
+    min-height: 300px;
+    max-height: 400px;
+    object-fit: cover;
+
+}
+
+.carousel {
+    background-color: rgba(0, 0, 0, 0.63);
 }
 
